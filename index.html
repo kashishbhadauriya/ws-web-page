@@ -9,6 +9,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
+    <style>
+        .whatsapp-button {
+            background-color: #25D366;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    
+        .whatsapp-button:hover {
+            background-color: #128C7E;
+        }
+    
+        .call-button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    
+        .call-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
         <!-- Demo Modal -->
@@ -123,9 +152,15 @@
                     <img src="loho.jpg" height="90px" alt="logo">
                 </figure>
                 <div class="col-lg-6">
-                    <div class="btn-outer d-flex gap-3 justify-content-end ">
-                        <button type="button" class="btn btn-success">WHATSAAP</button>
-                        <button type="button" class="btn btn-outline-primary">CALL US</button>
+                    <div class="btn-outer d-flex gap-3 justify-content-end "> <!-- WhatsApp Button -->
+                        <a href="https://wa.me/9876543210?text=Hello%20I%20need%20help!" target="_blank">
+                            <button class="whatsapp-button">Contact me on WhatsApp</button>
+                        </a>
+                    
+                        <!-- Call Button -->
+                        <a href="tel:9876543210">
+                            <button class="call-button">CALL US</button>
+                        </a>
                     </div>
                  </div>
             </div>
