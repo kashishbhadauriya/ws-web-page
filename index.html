@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WS PROJECT</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+<body>
+        <!-- Demo Modal -->
+<div class="modal fade" id="demoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Free Demo!</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            Free Demo session for 2 Days
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Start</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- Enquiry Modal -->
+<div class="modal fade" id="enModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Enquiry Now</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            Do you want to save your information
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;" data-bs-theme="light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">WsCube Tech</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link active" href="#" onclick="showSection('home')">Home</a>
+          <a class="nav-link" href="#" onclick="showSection('features')">Features</a>
+          <a class="nav-link" href="#" onclick="showSection('login')">Login</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Home Section -->
+  <section id="home" class="content-section" style="padding: 50px; text-align: center;">
+    <h1>Welcome to WsCube Tech</h1>
+    <p>Your gateway to digital marketing excellence. Start your journey with us today!</p>
+  </section>
+  
+  <!-- Features Section -->
+  <section id="features" class="content-section" style="padding: 50px; background-color: #f9f9f9; text-align: center;">
+    <h2>Our Features</h2>
+    <ul style="list-style-type: none;">
+      <li>✔️ Comprehensive Digital Marketing Course</li>
+      <li>✔️ Industry Expert Trainers</li>
+      <li>✔️ Live Projects and Real-World Applications</li>
+      <li>✔️ Flexible Learning with Online Access</li>
+      <li>✔️ Certification Upon Completion</li>
+    </ul>
+  </section>
+  
+  <!-- Login Section -->
+  <section id="login" class="content-section" style="padding: 50px; text-align: center;">
+    <h2>Login to Your Account</h2>
+    <p>Already a member? Log in to access exclusive content and manage your learning progress.</p>
+    <form action="#">
+      <div class="mb-3">
+        <label for="username" class="form-label">Username</label>
+        <input type="text" class="form-control" id="username" placeholder="Enter your username">
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password" placeholder="Enter your password">
+      </div>
+      <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+  </section>
+  
+  <script>
+    function showSection(sectionId) {
+      // Get all sections
+      const sections = document.querySelectorAll('.content-section');
+      
+      // Hide all sections
+      sections.forEach(section => {
+        section.style.display = 'none';
+      });
+      
+      // Show the selected section
+      const selectedSection = document.getElementById(sectionId);
+      selectedSection.style.display = 'block';
+    }
+  
+    // Initial state, showing Home section by default
+    showSection('home');
+  </script>  
+    <header class="container-fluid bg-white py-3 shadow-lg">
+        <div class="container">
+            <div class="row justify-content-between gy-4">
+                <figure class="col-lg-6 col-12 text-lg-start text-center">
+                    <img src="loho.jpg" height="90px" alt="logo">
+                </figure>
+                <div class="col-lg-6">
+                    <div class="btn-outer d-flex gap-3 justify-content-end ">
+                        <button type="button" class="btn btn-success">WHATSAAP</button>
+                        <button type="button" class="btn btn-outline-primary">CALL US</button>
+                    </div>
+                 </div>
+            </div>
+            </div>  
+    </header>
+    <section class="container-fluid py-lg-5 py-sm-4 py-3">
+        <div class="container">
+        <div class="row justify-content-between gy-4 align-item-center">
+            <div class="col-lg-6">
+                <div class="bannercontent">
+                    <h1>Career Opportunities <br> in 
+                        <span>Digital Marketing</span></h1>
+                        <p>Digital Marketing course so good,you only pay-after-placement</p>
+                        <ul class="m-0 p-0">
+                            <li class="mb-2"><img src="images.png" alt="" width="16" height="16"> Specialization: Performance Marketing</li>
+                            <li class="mb-2"><img src="images.png" alt="" width="16" height="16"> Min salary of Rs 4.5 LPA</li>
+                            <li class="mb-2"><img src="images.png" alt="" width="16" height="16"> 50 seats only</li>
+                        </ul>
+                        <div class="bannercontentbtn d-flex gap-4">
+                            <button data-bs-toggle="modal" data-bs-target="#demoModal" class="btn btn-primary">Book 2 Days Demo</button>
+                            <button data-bs-toggle="modal" data-bs-target="#enModal" class="edit"> Download</button>
+                        </div>
+                </div>
+            </div>
+                <div class="col-lg-5">
+                    <form action=""class="bannerform shadow-lg">
+                        <h3>Book You Free Class Now!</h3>
+                        <p>2 days of free demo classes without paying in advance!</p>
+                        <form>
+                            <div class="mb-3">
+                              <label class="form label">Name</label>
+                              <input type="text" class="form-control"placeholder="Enter your name">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form label">Email</label>
+                                <input type="email" class="form-control" placeholder="Enter your Email">
+                              </div>
+                              <div class="mb-3">
+                                <label class="form label">Phone no.</label>
+                                <div class="input-group">
+                                <span class="input-group-text" id="basic-addon1">+91</span>
+                                <input type="phone no." class="form-control" placeholder="Phone No.">
+                                </div>
+                              </div>
+                              <div class="mb-3">
+                                <button type="button" class="btn btn-primary">Register Now</button>
+                           </div>     
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="container shadow-lg mt-5 counterSection">
+                <div class=" row row-cols-lg-5 row-cols-md-2 row-cols-2 p-4">
+                    <div class="col">
+                        <h2>2000+</h2>
+                        <p>Successful digital marketing campaigns</p>
+                    </div>
+                    <div class="col">
+                        <h2>1500+</h2>
+                        <p>Graduates placed in top companies</p>
+                    </div>
+                    <div class="col">
+                        <h2>300+</h2>
+                        <p>Industry-certified trainers</p>
+                    </div>
+                    <div class="col">
+                        <h2>500+</h2>
+                        <p>Hours of live training sessions</p>
+                    </div>
+                    <div class="col">
+                        <h2>250+</h2>
+                        <p>Students with 5-star ratings</p>
+                    </div>
+               </div>
+        </div>
+    </section>
+    <section class=" container-fluid highlights-section py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2>Key highlights of the course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, vero!</p>
+          </div>
+        </div>
+        <div class="row gy-2">
+          <div class="col-lg-4 col-sm-6 col-12">
+            <div class="bg-white p-3 d-flex align-item-center gap-3 shadow-lg highlightitem">
+              <img src="assignment.jpg" alt="" width="100" height="100" >
+              <div>
+                <h4>Assignments & Module tests</h4>
+                <p>Test your knowledge</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 col-12">
+            <div class="bg-white p-3 d-flex align-item-center gap-3 shadow-lg highlightitem">
+              <img src="Industry recognized.png" alt="" width="100" height="100" >
+              <div>
+                <h4>Industry-recognized Certification</h4>
+                <p>Stand out to your professional</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 col-12">
+            <div class="bg-white p-3 d-flex align-item-center gap-3 shadow-lg highlightitem">
+              <img src="Download-Icon.webp" alt="" width="100" height="100" >
+              <div>
+                <h4>Downlaodable Content</h4>
+                <p>With lifetime access</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 col-12">
+            <div class="bg-white p-3 d-flex align-item-center gap-3 shadow-lg highlightitem">
+              <img src="industrial-project-management-services-in-pune-250x250.webp" alt="" width="100" height="100" >
+              <div>
+                <h4>6 Industry level Project</h4>
+                <p>Get practial skills</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 col-12">
+            <div class="bg-white p-3 d-flex align-item-center gap-3 shadow-lg highlightitem">
+              <img src="download.jpg" alt="" width="100" height="100" >
+              <div>
+                <h4>Social Media manager</h4>
+                <p>Test your knowledge</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 col-12 ">
+            <div class="bg-white p-3 d-flex align-item-center gap-3 shadow-lg highlightitem">
+              <img src="download (1).jpg" alt="" width="100" height="100" >
+              <div>
+                <h4>Content Marketing</h4>
+                <p>Test your knowledge</p>
+              </div>
+            </div>
+          </div>
+         </div>
+    </div>
+    <section class="container-fluid py-5">
+      <div class="container">
+        <div class="row justify-content-between  ">
+          <div class="col-lg-6">
+            <div class="bannercontent">
+              <h1>Get certified</h1>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+              <div class="col-12 mb-3">
+                <div class="bg-white d-flex  shadow-lg p-3">
+                  <img src="official.jpg" alt="Official Certification" width="90" height="90">
+                  <div>
+                    <h4>Official and verified</h4>
+                    <p>Get certified by Google, Hubspot, and more</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 mb-3">
+                <div class="bg-white d-flex align-items-center gap-3 shadow-lg p-3 rounded">
+                  <img src="share.png" alt="Shareable Certificate" width="70" height="70">
+                  <div>
+                    <h4>Easily shareable</h4>
+                    <p>Showcase your achievements across platforms</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="bg-white d-flex align-items-center gap-3 shadow-lg p-3 rounded">
+                  <img src="career shifting.jpg" alt="Career Shifting" width="100" height="100">
+                  <div>
+                    <h4>Career shifting</h4>
+                    <p>Boost your career with recognized certifications</p>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-4 mb-3">
+                <button type="button" class="btn btn-primary">Register Now</button>
+              </div>
+            </div>
+            
+          </div>
+          <div class="col-lg-5 p-3">
+            <img src="certificate.jpg" alt="Certificate Example" class="img-fluid" width="70%" height="70%"  >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container-fluid position-relative p-0">
+      <!-- Carousel with Background Images -->
+      <div id="carouselExampleInterval" class="carousel slide position-relative" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="new3.avif" class="d-block w-100" alt="..." style="height: 500px; object-fit: cover;">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="new2.jpg" class="d-block w-100" alt="..." style="height: 500px; object-fit: cover;">
+          </div>
+          <div class="carousel-item">
+            <img src="new4.jpg" class="d-block w-100" alt="..." style="height: 500px; object-fit: cover;">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    
+      <!-- Light Transparent Overlay on Images -->
+      <div class="light-overlay position-absolute top-0 start-0 w-100 h-100"></div>
+    
+      <!-- Overlay Content with Tabs (Home, Profile, Contact) -->
+      <div class="overlay-content position-absolute top-0 start-50 translate-middle-x w-100 text-white text-center p-4">
+        <div class="container rounded p-4 glass-box text-dark">
+          <h2>Curriculum of our Digital Marketing</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+    
+          <!-- Navigation Tabs -->
+          <nav>
+            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+              <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
+              <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
+              <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
+            </div>
+          </nav>
+    
+          <!-- Tab Content -->
+          <div class="tab-content mt-3" id="nav-tabContent">
+            <!-- Home Tab -->
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+              <h2>Welcome to WsCube Tech</h2>
+              <p>At WsCube Tech, we empower learners and professionals with top-quality training in digital skills that shape the future.</p>
+              <ul class="list-unstyled text-start mx-auto d-inline-block">
+                <li>✅ Industry-relevant courses</li>
+                <li>✅ Learn from experienced mentors</li>
+                <li>✅ Hands-on projects & practical exposure</li>
+                <li>✅ 100% placement assistance</li>
+              </ul>
+              <a href="#courses" class="btn btn-primary mt-3">Explore Courses</a>
+            </div>
+    
+            <!-- Profile Tab -->
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+              <h3>Your Profile</h3>
+              <p>Here’s where profile info goes — name, email, or settings form.</p>
+              <form>
+                <input type="text" class="form-control mb-2" placeholder="Enter your name">
+                <input type="email" class="form-control mb-2" placeholder="Enter your email">
+                <button class="btn btn-primary" type="submit">Update</button>
+              </form>
+            </div>
+    
+            <!-- Contact Tab -->
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+              <h3>Contact Us</h3>
+              <p>You can reach us at <strong>contact@wscubetech.com</strong> or use the form below.</p>
+              <form>
+                <textarea class="form-control mb-3" placeholder="Your message..." rows="4"></textarea>
+                <button class="btn btn-success" type="submit">Send</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <section class="mt-5">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row justify-content-between gy-2">
+            <div class="bg-white  shadow-lg text-center p-3"style="max-width: 90%; width: 70%; margin: 0 auto;">
+              <h2>Digital Marketing course <br>FAQs</h2>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      What are the course learning objectives?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      This will help you understand what the course aims to teach you and how it aligns with your goals.
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      How will the course be assessed?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      Knowing the grading criteria (exams, papers, projects, etc.) helps you plan your study strategy.
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      What are the prerequisites for this course?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      This ensures you have the necessary background knowledge and skills to succeed in the course.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-4 mb-3 text-center">
+                <button type="button" class="btn btn-primary">Book Free Classes</button>
+              </div>
+              
+  
+  
+    </section> 
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
+</html>
